@@ -7,7 +7,7 @@ import {
     refFromURL,
   } from "firebase/storage";
 import Button from '@mui/material/Button';
-import { storage } from "../Firebase";
+import { storage } from "../../lib/Firebase";
 import { useState,useEffect } from "react";
 import { v4 } from "uuid";
 import {useRouter} from "next/router"
