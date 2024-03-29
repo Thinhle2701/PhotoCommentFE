@@ -6,6 +6,7 @@ import {
     deleteObject,
     refFromURL,
   } from "firebase/storage";
+import Link from 'next/link';
 import Button from '@mui/material/Button';
 import { storage } from "../../lib/Firebase";
 import { useState,useEffect } from "react";
@@ -100,7 +101,11 @@ export default function HomePage() {
     
     return (
         <div >
-            <h1 style={{alignItems:"center",textAlign:"center"}}>Upload and Comment Photo By Thinh Le</h1>
+            <h1 style={{alignItems:"center",textAlign:"center"}}>
+                <p>Upload and Comment Photo By Thinh Le</p>
+                <Link href="/">Sign out</Link>
+            </h1>
+   
             <div style={{display:"flex",marginLeft:"30%"}}>
             <div>
                 <div>
